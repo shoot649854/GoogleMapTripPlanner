@@ -1,11 +1,15 @@
-// Calls the main render main map function
+/*
+Calls the main render main map function
 
-// src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&region=JP&language=ja&callback=initMap">
+src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&region=JP&language=ja&callback=initMap">
 
-// Note: This example requires that you consent to location sharing when
-// prompted by your browser. If you see the error "The Geolocation service
-// failed.", it means you probably did not give permission for the browser to
-// locate you.
+Note: This example requires that you consent to location sharing when
+prompted by your browser. If you see the error "The Geolocation service
+failed.", it means you probably did not give permission for the browser to
+locate you.
+
+Google Map Api Key = "AIzaSyC0r6H3EIK7hH4I5G9gjtPJpuDX_MBdFFc"
+*/
 
 let map, infoWindow;
 var service;
