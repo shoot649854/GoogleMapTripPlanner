@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trip Planner</title>
+    <script src="https://polyfill.io/v3/polyfill.js?features=default"></script>
+
+    <link rel="stylesheet" type="text/css" href="./main.css" />
+    <script type="text/javascript" src="./main.js"></script>
+  </head>
+  <body>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=PUTYOURKEY&callback=initMap&libraries=places&v=weekly"
+      defer
+    ></script>
+    <!-- <p>header</p> -->
+
+<!--     <div id="map"></div> -->
+   <!-- <p>footer</p> -->
+    
+    <div id="container">
+      <div id="map"></div>
+      <div id="sidebar">
+        <h2>Results</h2>
+        <ul id="places"></ul>
+        <button id="more">Load more results</button>
+      </div>
+    </div>
+    
+  </body>
+</html>
