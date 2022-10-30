@@ -73,49 +73,6 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
   infoWindow.open(map);
 }
 
-
-// function initialize(lat,lng) {
-//   var pyrmont = new google.maps.LatLng(lat,lng);
-//
-//   map = new google.maps.Map(document.getElementById('map'), {
-//       center: pyrmont,
-//       zoom: 15
-//     });
-//
-//   var request = {
-//     location: pyrmont,
-//     radius: '500',
-//     //In type you can mention type of places you want to see, like restaurants,parks,schools
-//     type: ['school']
-//   };
-//
-//   service = new google.maps.places.PlacesService(map);
-//   service.nearbySearch(request, callback);
-// }
-//
-// function callback(results, status) {
-//   if (status == google.maps.places.PlacesServiceStatus.OK) {
-//     for (var i = 0; i < results.length; i++) {
-//       createMarker(results[i]);
-//     }
-//   }
-// }
-//
-// function createMarker(place) {
-//   if (!place.geometry || !place.geometry.location) return;
-//
-//   const marker = new google.maps.Marker({
-//     map,
-//     position: place.geometry.location,
-//   });
-//
-//   google.maps.event.addListener(marker, "click", () => {
-//     infowindow.setContent(place.name || "");
-//     infowindow.open(map);
-//   });
-// }
-
-
 function initialize(lat,lng) {
   // Create the map.
   const pyrmont = { lat: lat, lng: lng};
@@ -144,7 +101,8 @@ function initialize(lat,lng) {
 
       addPlaces(results, map);
       moreButton.disabled = !pagination || !pagination.hasNextPage;
-      if (pagination && pagination.hasNextPage) {
+      if (pagination && pagination.hasNextPage) 
+      {
         getNextPage = () => {
           // Note: nextPage will call the same handler function as the initial call
           pagination.nextPage();
@@ -154,12 +112,16 @@ function initialize(lat,lng) {
   );
 }
 
-function addPlaces(places, map) {
+function addPlaces(places, map) 
+{
   const placesList = document.getElementById("places");
 
-  for (const place of places) {
-    if (place.geometry && place.geometry.location) {
-      const image = {
+  for (const place of places) 
+  {
+    if (place.geometry && place.geometry.location) 
+    {
+      const image = 
+      {
         url: place.icon,
         size: new google.maps.Size(71, 71),
         origin: new google.maps.Point(0, 0),
@@ -167,7 +129,8 @@ function addPlaces(places, map) {
         scaledSize: new google.maps.Size(25, 25),
       };
 
-      new google.maps.Marker({
+      new google.maps.Marker(
+      {
         map,
         icon: image,
         title: place.name,
@@ -178,9 +141,7 @@ function addPlaces(places, map) {
 
       li.textContent = place.name;
       placesList.appendChild(li);
-      li.addEventListener("click", () => {
-        map.setCenter(place.geometry.location);
-      });
+      li.addEventListener("click", () => {map.setCenter(place.geometry.location);});
     }
   }
 }
