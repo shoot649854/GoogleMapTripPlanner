@@ -13,6 +13,6 @@ We had several ideas from different categories, but we ended up having trip plan
 ## Challenges we ran into
 ## Accomplishments that we're proud of
 ## What we learned
-## What's next for Eco Solution
+## What's next
 ## Try it here
 
