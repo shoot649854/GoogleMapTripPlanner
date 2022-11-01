@@ -1,31 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trip Planner</title>
-    <script src="https://polyfill.io/v3/polyfill.js?features=default"></script>
-
-    <link rel="stylesheet" type="text/css" href="./main.css" />
-    <script type="text/javascript" src="./main.js"></script>
-  </head>
-  <body>
-    <!-- <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0r6H3EIK7hH4I5G9gjtPJpuDX_MBdFFc=initMap&libraries=places&v=weekly"
-      defer
-    ></script> -->
-    <script 
-      async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0r6H3EIK7hH4I5G9gjtPJpuDX_MBdFFc&callback=initMap">
-
-    </script>
-    <!-- <p>header</p> -->
-
-<!--     <div id="map"></div> -->
-   <!-- <p>footer</p> -->
     
+    <title>Trip Planner</title>
+    
+    <script src="https://polyfill.io/v3/polyfill.js?features=default"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script type="text/javascript" src="./main.js"></script>
+    <script type="module" src="./index.ts"></script>
+
+  </head>
+
+  <body>
+    <link rel="stylesheet" type="text/css" href="./main.css" />
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0r6H3EIK7hH4I5G9gjtPJpuDX_MBdFFc&callback=initMap"></script>
     <div id="container">
-      <div id="map"></div>
+    <div id="map"></div>
       <div id="sidebar">
 
         <input
@@ -34,6 +28,7 @@
           type="text"
           placeholder="Search Box"
         />
+        <div id="map"></div>
 
         <h2>Results</h2>
         <ul id="places"></ul>
