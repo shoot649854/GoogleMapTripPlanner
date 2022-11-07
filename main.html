@@ -16,24 +16,30 @@
   </head>
 
   <body>
-    <link rel="stylesheet" type="text/css" href="./main.css" />
+    <link rel="stylesheet" type="text/css" href="./main.css"></link>
     <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0r6H3EIK7hH4I5G9gjtPJpuDX_MBdFFc&callback=initMap"></script> -->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0r6H3EIK7hH4I5G9gjtPJpuDX_MBdFFc&callback=initAutocomplete&libraries=places&v=weekly"></script>
+    
+    <input
+      id="pac-input"
+      class="controls"
+      type="text"
+      placeholder="Search Box"
+    />
+
     <div id="container">
-    <div id="map"></div>
-      <div id="sidebar">
+      <div id="map"></div>
+      <div id="container">
+        <div id="sidebar">
+        <h1>SHhowing Outputs</h1>
+        <h2>Calculating how long it takes </h2>
 
-        <input
-          id="pac-input"
-          class="controls"
-          type="text"
-          placeholder="Search Box"
-        />
-        <div id="map"></div>
-
-        <h2>Results</h2>
-        <ul id="places"></ul>
-        <button id="more">Load more results</button>
+        <h>How long it takes on place?<span id="pac-output"></span>
+          <input type="text"></input>
+        </h>
+        
+        <button id="more">See travel plan</button>
+      </div>
       </div>
     </div>
     
