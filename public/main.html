@@ -1,47 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <title>Trip Planner</title>
-    
-    <script src="https://polyfill.io/v3/polyfill.js?features=default"></script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script type="text/javascript" src="/Users/shotomorisaki/programming/GoogleMapTripPlanner/src/main.js"></script>
-    <!-- <script type="module" src="./index.ts"></script> -->
-
-  </head>
-
-  <body>
-    <link rel="stylesheet" type="text/css" href="/Users/shotomorisaki/programming/GoogleMapTripPlanner/src/main.css"></link>
-    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0r6H3EIK7hH4I5G9gjtPJpuDX_MBdFFc&callback=initMap"></script> -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0r6H3EIK7hH4I5G9gjtPJpuDX_MBdFFc&callback=initAutocomplete&libraries=places&v=weekly"></script>
-    
-    <input
-      id="pac-input"
-      class="controls"
-      type="text"
-      placeholder="Search Box"
-    />
-
-    <div id="container">
-      <div id="map"></div>
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Trip Planner</title>
+      <script src="https://polyfill.io/v3/polyfill.js?features=default"></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+      <script type="text/javascript" src="/Users/shotomorisaki/programming/GoogleMapTripPlanner/src/main.js"></script>
+      <!-- <script type="module" src="./index.ts"></script> -->
+   </head>
+   <body>
+      <link rel="stylesheet" type="text/css" href="/Users/shotomorisaki/programming/GoogleMapTripPlanner/src/main.css">
+      </link>
+      <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0r6H3EIK7hH4I5G9gjtPJpuDX_MBdFFc&callback=initMap"></script> -->
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0r6H3EIK7hH4I5G9gjtPJpuDX_MBdFFc&callback=initAutocomplete&libraries=places&v=weekly"></script>
+      <input
+         id="pac-input"
+         class="controls"
+         type="text"
+         placeholder="Search Box"
+         />
       <div id="container">
-        <div id="sidebar">
-        <h1>SHhowing Outputs</h1>
-        <h2>Calculating how long it takes </h2>
-
-        <h>How long it takes on place?<span id="pac-output"></span>
-          <input type="text"></input>
-        </h>
-        
-        <button id="more">See travel plan</button>
+         <div id="map"></div>
+         <div id="container">
+            <div id="sidebar">
+               <h1>SHhowing Outputs</h1>
+               <h2>Calculating how long it takes </h2>
+               <h>How long it takes on place?<span id="pac-output"></span>
+                  <input type="text"></input>
+               </h>
+               <button id="more">See travel plan</button>
+            </div>
+         </div>
       </div>
-      </div>
-    </div>
-    
-  </body>
+   </body>
 </html>
